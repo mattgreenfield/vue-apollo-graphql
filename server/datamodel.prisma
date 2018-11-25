@@ -1,0 +1,12 @@
+type User {
+  id: ID! @unique
+  name: String!
+  applications: Int
+}
+
+type Job {
+  id: ID! @unique
+  title: String!
+  description: String!
+  isPublished: Boolean @default(value: "false")
+}
