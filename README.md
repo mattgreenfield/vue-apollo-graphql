@@ -1,54 +1,23 @@
-# How to setup prisma
+# When making a schema change or adding new fields
 
 In the `API/` directory...
 
-`npm install -g prisma`
-`npm install -g graphql-cli`
-`prisma init server`
-Edit the datamodel.prisma file
-`prisma deploy`
-`prisma playground`
+- `npm install -g prisma`
+- `npm install -g graphql-cli`
+- `prisma init server` (first time only)
+- Edit the datamodel.prisma file
+- `prisma deploy` - deploys the changes to Prisma servers in the sky
+- `prisma playground` (optional)
 
-# How to connect vue to prisma
+# To run the app locally
 
 In the `Frontend/` directory...
-`npm install -g @vue/cli`
-`vue init`
-`npm install vue-apollo graphql apollo-client apollo-link apollo-link-http apollo-link-context apollo-cache-inmemory graphql-tag`
-Copy a load of imports in to main.js
 
-# vue-basics
+- `npm install -g @vue/cli`
+- `vue init`
+- `npm install`
+- `npm run serve`
 
-## Project setup
+# To build for deployment
 
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Run your tests
-
-```
-npm run test
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- `npm run build`
