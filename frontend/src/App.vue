@@ -1,16 +1,22 @@
 <template>
   <div id="app">
-    <HelloWorld msg="The page title"/>
+    <Heading text="Jobs for All" />
+    <JobsList/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Heading from "./components/Heading/Heading.vue";
+import JobsList from "./components/JobsList/JobsList.vue";
 
 export default {
-  name: "app",
+  name: "App",
+  props: {
+    msg: String
+  },
   components: {
-    HelloWorld
+    Heading,
+    JobsList
   }
 };
 </script>
