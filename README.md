@@ -14,7 +14,6 @@ In the `API/` directory...
 In the `Frontend/` directory...
 
 - `npm install -g @vue/cli`
-- `vue init`
 - `npm install`
 - `npm run serve`
 
